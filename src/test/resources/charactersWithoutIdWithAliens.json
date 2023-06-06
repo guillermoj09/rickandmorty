@@ -1,0 +1,70 @@
+[
+  {
+    "id": null,
+    "name": "Rick Sanchez",
+    "status": "Alive",
+    "species": "Alien",
+    "type": "",
+    "gender": "Male",
+    "origin": {
+      "name": "",
+      "url": ""
+    },
+    "location": {
+      "url": "",
+      "name": "",
+      "residents": [
+        "https://rickandmortyapi.com/api/character/38",
+        "https://rickandmortyapi.com/api/character/45",
+        "https://rickandmortyapi.com/api/character/71"
+      ]
+    }
+  },
+  {
+    "id": 2,
+    "name": "Morty Smith",
+    "status": "Alive",
+    "species": "Human",
+    "type": "",
+    "gender": "Male",
+    "origin": {
+      "name": "Mars",
+      "url": ""
+    },
+    "location": {
+      "name": "Mars",
+      "url": "",
+      "residents": [
+        "https://rickandmortyapi.com/api/character/38",
+        "https://rickandmortyapi.com/api/character/45",
+        "https://rickandmortyapi.com/api/character/71",
+        "https://rickandmortyapi.com/api/character/82",
+        "https://rickandmortyapi.com/api/character/83",
+        "https://rickandmortyapi.com/api/character/92",
+        "https://rickandmortyapi.com/api/character/112",
+        "https://rickandmortyapi.com/api/character/114"
+      ]
+    }
+  },
+  {
+    "id": 3,
+    "name": "Summer Smith",
+    "status": "Alive",
+    "species": "Alien",
+    "type": "",
+    "gender": "Female",
+    "origin": {
+      "name": "Earth",
+      "url": ""
+    },
+    "location": {
+      "name": "Mars",
+      "url": "",
+      "residents": [
+        "https://rickandmortyapi.com/api/character/38",
+        "https://rickandmortyapi.com/api/character/45"
+
+      ]
+    }
+  }
+]

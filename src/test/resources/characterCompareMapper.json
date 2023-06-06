@@ -1,0 +1,22 @@
+
+{
+  "id": null,
+  "name": "Abadango Cluster Princess",
+  "status": "activo",
+  "type": "activo",
+  "species": "Human",
+  "gender": "gender",
+  "episode": null,
+  "origin": {
+    "id": null,
+    "name": "Citadel of Ricks",
+    "type": "Space station",
+    "dimension": "unknown"
+  },
+  "location": {
+    "id": null,
+    "name": "Citadel of Ricks",
+    "type": "Space station",
+    "dimension": "unknown"
+  }
+}

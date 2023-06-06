@@ -1,0 +1,19 @@
+{
+  "id": 36,
+  "name": "Beta-Seven",
+  "status": "Alive",
+  "species": "Alien",
+  "type": "Hivemind",
+  "gender": "unknown",
+  "origin": {
+    "name": "unknown",
+    "url": ""
+  },
+  "location": {
+    "name": "unknown",
+    "url": ""
+  },
+  "episode": [
+    "https://rickandmortyapi.com/api/episode/14"
+  ]
+}

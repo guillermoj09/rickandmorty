@@ -1,0 +1,50 @@
+[
+  {
+    "id": 1,
+    "name": "Rick Sanchez",
+    "status": "Alive",
+    "species": "Human",
+    "type": "",
+    "gender": "Male",
+    "origin": {
+      "name": "",
+      "url": ""
+    },
+    "location": {
+      "url": "",
+      "name": ""
+    }
+  },
+  {
+    "id": 2,
+    "name": "Morty Smith",
+    "status": "Alive",
+    "species": "Human",
+    "type": "",
+    "gender": "Male",
+    "origin": {
+      "name": "Mars",
+      "url": ""
+    },
+    "location": {
+      "name": "Mars",
+      "url": ""
+    }
+  },
+  {
+    "id": 3,
+    "name": "Summer Smith",
+    "status": "Alive",
+    "species": "Human",
+    "type": "",
+    "gender": "Female",
+    "origin": {
+      "name": "Mars",
+      "url": ""
+    },
+    "location": {
+      "name": "Mars",
+      "url": ""
+    }
+  }
+]

@@ -1,0 +1,19 @@
+{
+  "id": 6,
+  "name": "Abadango Cluster Princess",
+  "status": "Alive",
+  "species": "Alien",
+  "type": "",
+  "gender": "Female",
+  "origin": {
+    "name": "Abadango",
+    "url": "https://rickandmortyapi.com/api/location/2"
+  },
+  "location": {
+    "name": "Abadango",
+    "url": "https://rickandmortyapi.com/api/location/2"
+  },
+  "episode": [
+    "https://rickandmortyapi.com/api/episode/27"
+  ]
+}

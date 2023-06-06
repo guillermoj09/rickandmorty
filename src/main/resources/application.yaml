@@ -1,0 +1,23 @@
+urlApi:
+  rickAndMorty: https://rickandmortyapi.com/api
+  dogCeo: https://dog.ceo/api/breed/hound/list
+
+spring:
+  datasource:
+    url: jdbc:postgresql://localhost:5432/postgres
+    username: postgres
+    password: onboarding
+  jpa:
+    database-platform: org.hibernate.dialect.PostgreSQL94Dialect
+    show-sql: true
+    hibernate:
+      naming:
+        implicit-strategy: org.hibernate.boot.model.naming.ImplicitNamingStrategyJpaCompliantImpl
+    properties:
+      hibernate:
+        format_sql: true
+        default_schema: public
+  flyway:
+    enabled: true
+    locations: classpath:/db/migration
+    defaultSchema: public

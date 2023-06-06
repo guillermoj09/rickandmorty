@@ -1,0 +1,163 @@
+[
+  {
+    "uuid": "bf1be386-60e5-4811-86ad-ac741cc5df99",
+    "name": "Rick Sanchez",
+    "status": "Alive",
+    "species": "Human",
+    "type": "",
+    "gender": "Male",
+    "origin": {
+      "uuid": "bf1be386-60e5-4811-86ad-ac741cc5df98",
+      "name": "Earth (C-137)",
+      "type": "Planet",
+      "dimension": "Dimension C-137"
+    },
+    "location": {
+      "uuid": "bf1be386-60e5-4811-86ad-ac741cc5df97",
+      "name": "Citadel of Ricks",
+      "type": "Space station",
+      "dimension": "unknown"
+    }
+  },
+  {
+    "uuid": "bf1be386-60e5-4811-86ad-ac741cc5df11",
+    "name": "Morty Smith",
+    "status": "Alive",
+    "species": "Human",
+    "type": "",
+    "gender": "Male",
+    "origin": {
+      "uuid": "bf1be386-60e5-4811-86ad-ac741cc5df09",
+      "name": "unknown",
+      "type": "",
+      "dimension": "unknown"
+    },
+    "location": {
+      "uuid": "bf1be386-60e5-4811-86ad-ac741cc5df00",
+      "name": "Citadel of Ricks",
+      "type": "Space station",
+      "dimension": "unknown"
+    }
+  },
+  {
+    "uuid": "bf1be386-60e5-4811-86ad-ac741cc5df01",
+    "name": "Summer Smith",
+    "status": "Alive",
+    "species": "Human",
+    "type": "",
+    "gender": "Female",
+    "origin": {
+      "uuid": "bf1be386-60e5-4811-86ad-ac741cc5df02",
+      "name": "Earth (Replacement Dimension)",
+      "type": "Planet",
+      "dimension": "Replacement Dimension"
+    },
+    "location": {
+      "uuid": "bf1be386-60e5-4811-86ad-ac741cc5df22",
+      "name": "Earth (Replacement Dimension)",
+      "type": "Planet",
+      "dimension": "Replacement Dimension"
+    }
+  },
+  {
+    "uuid": "bf1be386-60e5-4811-86ad-ac741cc5df33",
+    "name": "Beth Smith",
+    "status": "Alive",
+    "species": "Human",
+    "type": "",
+    "gender": "Female",
+    "origin": {
+      "uuid": "bf1be386-60e5-4811-86ad-ac741cc5df44",
+      "name": "Earth (Replacement Dimension)",
+      "type": "Planet",
+      "dimension": "Replacement Dimension"
+    },
+    "location": {
+      "uuid": "bf1be386-60e5-4811-86ad-ac741cc5df55",
+      "name": "Earth (Replacement Dimension)",
+      "type": "Planet",
+      "dimension": "Replacement Dimension"
+    }
+  },
+  {
+    "uuid": "bf1be386-60e5-4811-86ad-ac741cc5df25",
+    "name": "Jerry Smith",
+    "status": "Alive",
+    "species": "Human",
+    "type": "",
+    "gender": "Male",
+    "origin": {
+      "uuid": "bf1be386-60e5-4811-86ad-ac741cc5df23",
+      "name": "Earth (Replacement Dimension)",
+      "type": "Planet",
+      "dimension": "Replacement Dimension"
+    },
+    "location": {
+      "uuid": "bf1be386-60e5-4811-86ad-ac741cc5df28",
+      "name": "Earth (Replacement Dimension)",
+      "type": "Planet",
+      "dimension": "Replacement Dimension"
+    }
+  },
+  {
+    "uuid": "bf1be386-60e5-4811-86ad-ac741cc5df87",
+    "name": "Abadango Cluster Princess",
+    "status": "Alive",
+    "species": "Alien",
+    "type": "",
+    "gender": "Female",
+    "origin": {
+      "uuid": "bf1be386-60e5-4811-86ad-ac741cc5df86",
+      "name": "Abadango",
+      "type": "Cluster",
+      "dimension": "unknown"
+    },
+    "location": {
+      "uuid": "bf1be386-60e5-4811-86ad-ac741cc5df85",
+      "name": "Abadango",
+      "type": "Cluster",
+      "dimension": "unknown"
+    }
+  },
+  {
+    "uuid": "bf1be386-60e5-4811-86ad-ac741cc5df76",
+    "name": "Annie",
+    "status": "Alive",
+    "species": "Human",
+    "type": "",
+    "gender": "Female",
+    "origin": {
+      "uuid": "bf1be386-60e5-4811-86ad-ac741cc5df75",
+      "name": "Earth (C-137)",
+      "type": "Planet",
+      "dimension": "Dimension C-137"
+    },
+    "location": {
+      "uuid": "bf1be386-60e5-4811-86ad-ac741cc5df74",
+      "name": "Anatomy Park",
+      "type": "Microverse",
+      "dimension": "Dimension C-137"
+    }
+
+  },
+  {
+    "uuid": "bf1be386-60e5-4811-86ad-ac741cc5df65",
+    "name": "Antenna Morty",
+    "status": "Alive",
+    "species": "Human",
+    "type": "Human with antennae",
+    "gender": "Male",
+    "origin": {
+      "uuid": "bf1be386-60e5-4811-86ad-ac741cc5df43",
+      "name": "unknown",
+      "type": "",
+      "dimension": ""
+    },
+    "location": {
+      "uuid": "bf1be386-60e5-4811-86ad-ac741cc5df66",
+      "name": "Citadel of Ricks",
+      "type": "Space station",
+      "dimension": "unknown"
+    }
+  }
+]

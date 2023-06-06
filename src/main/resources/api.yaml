@@ -1,0 +1,332 @@
+---
+swagger: "2.0"
+info:
+  version: "1.0.0"
+  title: "On Boarding API"
+schemes:
+  - "http"
+consumes:
+  - "application/json"
+produces:
+  - "application/json"
+tags:
+  - name: characters
+    description: Everything about Characters
+  - name: character
+    description: Everything about Characters
+
+paths:
+  /characters:
+    get:
+      tags:
+        - characters
+      description: "Returns all characters"
+      operationId: "getCharacters"
+      responses:
+        "200":
+          description: "A list of characters."
+          schema:
+            $ref: "#/definitions/GetCharactersResponse"
+        "500":
+          description: "Response with error."
+          schema:
+            $ref: "#/definitions/ApiErrorResponse"
+    post:
+      tags:
+        - characters
+      description: "Save a list of characters"
+      operationId: "postCharacters"
+      parameters:
+        - in: body
+          name: characters
+          description: All Characters to save.
+          schema:
+            $ref: '#/definitions/PostCharactersRequest'
+      responses:
+        "201":
+          description: "A successful status"
+        "500":
+          description: "Response with error."
+          schema:
+            $ref: "#/definitions/ApiErrorResponse"
+
+  /character/{id}:
+    get:
+      parameters:
+        - in: path
+          name : id
+          required: true
+          type: integer
+      tags:
+        - character
+      description: "Return Object Character"
+      operationId: "getCharacter"
+      responses:
+        "200":
+          description: "A list of characters."
+          schema:
+            $ref: "#/definitions/GetCharacterResponse"
+        "500":
+          description: "Response with error."
+          schema:
+            $ref: "#/definitions/ApiErrorResponse"
+        "404":
+          description: "Response with error."
+          schema:
+            $ref: "#/definitions/ApiErrorResponse"
+
+    delete:
+      parameters:
+        - in: path
+          name : id
+          required: true
+          type: string
+      tags:
+        - character
+      description: "Delete Character Repository"
+      operationId: "deleteCharacter"
+      responses:
+        "200":
+          description: "Reponse Ok delete"
+        "500":
+          description: "Response with error."
+          schema:
+            $ref: "#/definitions/ApiErrorResponse"
+        "404":
+          description: "Response with error."
+          schema:
+            $ref: "#/definitions/ApiErrorResponse"
+
+
+  /character:
+    post:
+      parameters:
+        - in: body
+          name: character
+          description: Character to save.
+          schema:
+            $ref: '#/definitions/ApiCharacter'
+
+      tags:
+        - character
+      description: "Save a Character"
+      responses:
+        "201":
+          description: "A successful status"
+        "500":
+          description: "Response with error."
+          schema:
+            $ref: "#/definitions/ApiErrorResponse"
+
+    get:
+      tags:
+        - character
+      description: "All Characters to save"
+      operationId: "getAllCharacter"
+      responses:
+        "200":
+          description: "A successful status"
+          schema:
+            type: "array"
+            items:
+              $ref: "#/definitions/ApiCharacterDb"
+        "500":
+          description: "Response with error."
+          schema:
+            $ref: "#/definitions/ApiErrorResponse"
+
+  /character/status/{status}:
+    get:
+      parameters:
+        - in: path
+          name : status
+          required: true
+          type: string
+      tags:
+        - character
+      description: "Return status success"
+      operationId: "SaveAllCharacterInRepositoryFromGateway"
+      responses:
+        "200":
+          description: "A list of characters from Gateway, save all in reposository by status"
+        "500":
+          description: "Response with error."
+          schema:
+            $ref: "#/definitions/ApiErrorResponse"
+        "404":
+          description: "Response with error."
+          schema:
+            $ref: "#/definitions/ApiErrorResponse"
+
+
+definitions:
+  PostCharactersRequest:
+    type: "object"
+    required:
+      - "characters"
+    properties:
+      characters:
+        type: "array"
+        items:
+          $ref: "#/definitions/ApiCharacter"
+
+  GetCharactersResponse:
+    type: "object"
+    required:
+      - "total"
+      - "characters"
+    properties:
+      total:
+        type: "integer"
+        format: "int64"
+      characters:
+        type: "array"
+        items:
+          $ref: "#/definitions/ApiCharacter"
+
+  GetCharacterResponse:
+    type: "object"
+    required:
+      - "id"
+      - "name"
+      - "status"
+      - "species"
+      - "type"
+      - "episode_count"
+      - "origin"
+    properties:
+      id:
+        type: "integer"
+      name:
+        type: "string"
+      status:
+        type: "string"
+      species:
+        type: "string"
+      type:
+        type: "string"
+      episode_count:
+        type: "integer"
+      origin:
+        $ref: "#/definitions/ApiOrigin"
+
+  ApiCharacter:
+    type: "object"
+    required:
+      - "id"
+      - "name"
+      - "status"
+      - "species"
+      - "type"
+      - "gender"
+      - "origin"
+      - "location"
+    properties:
+      id:
+        type: "integer"
+      name:
+        type: "string"
+      status:
+        type: "string"
+      species:
+        type: "string"
+      type:
+        type: "string"
+      gender:
+        type: "string"
+      origin:
+        $ref: "#/definitions/ApiLocation"
+      location:
+        $ref: "#/definitions/ApiLocation"
+
+  ApiCharacterDb:
+    type: "object"
+    required:
+      - "id"
+      - "name"
+      - "status"
+      - "species"
+      - "type"
+      - "gender"
+      - "origin"
+      - "location"
+    properties:
+      id:
+        type: "string"
+      name:
+        type: "string"
+      status:
+        type: "string"
+      species:
+        type: "string"
+      type:
+        type: "string"
+      gender:
+        type: "string"
+      origin:
+        $ref: "#/definitions/ApiLocationDb"
+      location:
+        $ref: "#/definitions/ApiLocationDb"
+
+  ApiOrigin:
+    type: "object"
+    required:
+      - "name"
+      - "url"
+      - "dimension"
+      - "residents"
+    properties:
+      name:
+        type: "string"
+      url:
+        type: "string"
+      dimension:
+        type: "string"
+      type:
+        type: "string"
+      residents:
+        type: "array"
+        items:
+          type: "string"
+
+  ApiLocation:
+    type: "object"
+    required:
+      - "id"
+      - "name"
+      - "type"
+      - "dimension"
+    properties:
+      id:
+        type: "integer"
+      name:
+        type: "string"
+      type:
+        type: "string"
+      dimension:
+        type: "string"
+
+  ApiLocationDb:
+    type: "object"
+    required:
+      - "id"
+      - "name"
+      - "type"
+      - "dimension"
+    properties:
+      id:
+        type: "string"
+      name:
+        type: "string"
+      type:
+        type: "string"
+      dimension:
+        type: "string"
+
+  ApiErrorResponse:
+    type: "object"
+    required:
+      - "message"
+    properties:
+      message:
+        type: "string"

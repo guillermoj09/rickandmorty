@@ -1,0 +1,32 @@
+[
+  {
+    "uuid": "18573321-292d-45cb-bd58-73bb194bdc25",
+    "name": "Rick Sanchez",
+    "status": "Alive",
+    "species": "Human",
+    "type": "",
+    "origin": null,
+    "location": null
+
+  },
+  {
+    "uuid": "29641528-d386-4e6d-a323-cc9ce550f542",
+    "name": "Rick Sanchezz",
+    "status": "Alive",
+    "species": "Human",
+    "type": "",
+    "origin": {
+      "uuid": "daf23264-8ed8-4e9d-8d0a-d2df45e36e7b",
+      "name": "Earth (C-137)",
+      "type": "Planet",
+      "dimension": "unknown"
+    },
+    "location": {
+      "uuid": "380e30b8-6106-4a45-98a1-3187c7041986",
+      "name": "Citadel of Ricks",
+      "type": "Space station",
+      "dimension": "unknown"
+    }
+  }
+
+]

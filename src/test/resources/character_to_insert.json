@@ -1,0 +1,20 @@
+{
+  "id": null,
+  "name": "Rick Sanchez",
+  "status": "Alive",
+  "species": "Human",
+  "type": "",
+  "gender": "Male",
+  "origin": {
+    "id": null,
+    "name": "Earth (C-137)",
+    "type": "Planet",
+    "dimension": "unknown"
+  },
+  "location": {
+    "id": null,
+    "name": "Citadel of Ricks",
+    "type": "Space station",
+    "dimension": "unknown"
+  }
+}
